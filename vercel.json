@@ -1,4 +1,13 @@
 {
+  "builds": [
+    { "src": "package.json", "use": "@vercel/static-build" }
+  ],
+  "env": {
+    "VITE_API_URL": "https://medistcok-bancend.onrender.com"
+  },
+  "installCommand": "npm install",
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
   "rewrites": [
     {
       "source": "/(.*)",
