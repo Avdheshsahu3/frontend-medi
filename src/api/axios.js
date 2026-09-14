@@ -2,7 +2,7 @@ import axios from 'axios'
 
 /** Pre-configured Axios instance. Adds the JWT token to every request. */
 const api = axios.create({
-  baseURL: (import.meta.env.VITE_API_URL || 'https://medistcok-bancend.onrender.com') + '/api',
+  baseURL: (import.meta.env.VITE_API_URL || 'https://medistcok-bancend-1.onrender.com') + '/api',
   headers: { 'Content-Type': 'application/json' },
 })
 
